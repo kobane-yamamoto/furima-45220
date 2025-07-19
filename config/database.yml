@@ -49,7 +49,7 @@ test:
 # for a full overview on how database connection configuration can be specified.
 #
 production:
-  <<: *default
-  database: furima_45220_production
-  username: furima_45220
-  password: <%= ENV["FURIMA_45220_DATABASE_PASSWORD"] %>
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  url: <%= ENV['DATABASE_URL'] %>
