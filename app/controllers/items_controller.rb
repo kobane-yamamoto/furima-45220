@@ -1,7 +1,7 @@
 class ItemsController < ApplicationController
   # 商品一覧機能の実装で記述する部分なので、一旦コメントアウト
 
-  # before_action :authenticate_user!, only: [:new, :create]
+  before_action :authenticate_user!, only: [:new, :create]
 
   # def index
   #  @items = Item.order('created_at DESC')
