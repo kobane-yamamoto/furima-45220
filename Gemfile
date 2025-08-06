@@ -81,3 +81,7 @@ gem 'pry-rails'
 
 gem 'payjp'
 gem 'gon'
+
+gem "image_processing", "~> 1.2"
+
+gem "mini_magick"
